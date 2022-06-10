@@ -1,0 +1,151 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.watch-sub-f {
+  cursor: pointer;
+}
+
+/* .partner-wrapper {
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+} */
+
+.partner-container {
+  color: white;
+}
+
+.watch-t {
+  margin: -10px -10px 10px -10px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.watch-t-active {
+  background: #8263a7;
+  border-radius: 10px;
+}
+
+.watch-t-input {
+  width: 100%;
+  background: #3b2853;
+  color: white;
+  border-radius: 5px;
+}
+
+.watch-i-close {
+  display: none;
+}
+
+.watch-subs-t:hover .watch-i-close {
+  display: inline-block
+}
+
+.watch-i-data {
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  word-wrap: break-word;
+  width: calc(100% - 16px);
+}
+
+.select-m-showlist {
+  width: calc(100% - 24px);
+}
+
+#header .container {
+  flex-wrap: wrap;
+}
+
+@media (max-width: 992px) {
+  .dashboard-t {
+    flex-direction: column-reverse;
+  }
+
+  .dashboard-t>div {
+    margin-bottom: 20px;
+  }
+
+}
+
+.floating-tooltip-2 {
+	width: 96px;
+	position: absolute;
+	display: none;
+	padding: 8px;
+	box-sizing: border-box;
+	font-size: 12px;
+	color: white;
+	background-color: #0a0221;
+	text-align: left;
+	z-index: 1000;
+	top: 12px;
+	left: 12px;
+	pointer-events: none;
+	border: 1px solid #1e153c;
+	border-radius: 8px;
+}
+
+.floating-tooltip-2 > div {
+  display: flex;
+  align-items: center;
+}
+
+.floating-tooltip-2 > div span:first-child {
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+.high-chart-tooltip .y-value {
+  color: rgb(74, 143, 231);
+}
+
+.high-chart-tooltip .x-value {
+  color: rgb(235, 235, 240);
+  font-weight: bold;
+}
+
+@media (min-width: 578px) {
+  /** Mozilla scrollbar*/
+  * {
+    scrollbar-color: #CCC !important;
+    scrollbar-width: thin !important;
+  }
+
+  /** Scrollbar for browser based on webkit */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 6px;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.06);
+    border-radius: 6px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255,255,255,0.1);
+  }
+  ::-webkit-scrollbar-thumb:active {
+    background: rgba(255,255,255,0.08);
+  }
+  ::-webkit-scrollbar-track {
+    background: rgba(255,255,255,0.06);
+  }
+}
