@@ -4,7 +4,7 @@ import { Stake } from '../components/Stake';
 const stake: NextPage = () => {
   return (
     <>
-      <Stake />
+      <Stake /> //main
     </>
   )
 }
